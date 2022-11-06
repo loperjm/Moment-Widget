@@ -9,21 +9,32 @@
 /* Begin PBXBuildFile section */
 		93AE82FA2917B2DE0009910E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE82F92917B2DE0009910E /* AppDelegate.swift */; };
 		93AE82FC2917B2DE0009910E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE82FB2917B2DE0009910E /* SceneDelegate.swift */; };
-		93AE82FE2917B2DE0009910E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE82FD2917B2DE0009910E /* ViewController.swift */; };
+		93AE82FE2917B2DE0009910E /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE82FD2917B2DE0009910E /* MainVC.swift */; };
 		93AE83012917B2DE0009910E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93AE82FF2917B2DE0009910E /* Main.storyboard */; };
 		93AE83032917B2E00009910E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93AE83022917B2E00009910E /* Assets.xcassets */; };
 		93AE83062917B2E00009910E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93AE83042917B2E00009910E /* LaunchScreen.storyboard */; };
+		93AE83122917C48A0009910E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 93AE83112917C48A0009910E /* SnapKit */; };
+		93AE83142917CFF70009910E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE83132917CFF70009910E /* Constants.swift */; };
+		93AE83162917D0920009910E /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE83152917D0920009910E /* PhotoService.swift */; };
+		93AE83182917D1100009910E /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE83172917D1100009910E /* AlbumCell.swift */; };
+		93AE831A2917DEBB0009910E /* AlbumData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE83192917DEBB0009910E /* AlbumData.swift */; };
+		93AE831C2917E0A00009910E /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE831B2917E0A00009910E /* DetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		93AE82F62917B2DE0009910E /* moment-widget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "moment-widget.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93AE82F92917B2DE0009910E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93AE82FB2917B2DE0009910E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		93AE82FD2917B2DE0009910E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		93AE82FD2917B2DE0009910E /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		93AE83002917B2DE0009910E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93AE83022917B2E00009910E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93AE83052917B2E00009910E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93AE83072917B2E00009910E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93AE83132917CFF70009910E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		93AE83152917D0920009910E /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
+		93AE83172917D1100009910E /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		93AE83192917DEBB0009910E /* AlbumData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumData.swift; sourceTree = "<group>"; };
+		93AE831B2917E0A00009910E /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93AE83122917C48A0009910E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +68,44 @@
 		93AE82F82917B2DE0009910E /* moment-widget */ = {
 			isa = PBXGroup;
 			children = (
+				93AE830E2917C18A0009910E /* Model */,
+				93AE830D2917C1840009910E /* View */,
+				93AE830F2917C18F0009910E /* Controller */,
+				93AE83132917CFF70009910E /* Constants.swift */,
 				93AE82F92917B2DE0009910E /* AppDelegate.swift */,
 				93AE82FB2917B2DE0009910E /* SceneDelegate.swift */,
-				93AE82FD2917B2DE0009910E /* ViewController.swift */,
-				93AE82FF2917B2DE0009910E /* Main.storyboard */,
 				93AE83022917B2E00009910E /* Assets.xcassets */,
 				93AE83042917B2E00009910E /* LaunchScreen.storyboard */,
 				93AE83072917B2E00009910E /* Info.plist */,
+				93AE83152917D0920009910E /* PhotoService.swift */,
 			);
 			path = "moment-widget";
+			sourceTree = "<group>";
+		};
+		93AE830D2917C1840009910E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				93AE82FF2917B2DE0009910E /* Main.storyboard */,
+				93AE83172917D1100009910E /* AlbumCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		93AE830E2917C18A0009910E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93AE83192917DEBB0009910E /* AlbumData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		93AE830F2917C18F0009910E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				93AE82FD2917B2DE0009910E /* MainVC.swift */,
+				93AE831B2917E0A00009910E /* DetailVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +124,9 @@
 			dependencies = (
 			);
 			name = "moment-widget";
+			packageProductDependencies = (
+				93AE83112917C48A0009910E /* SnapKit */,
+			);
 			productName = "moment-widget";
 			productReference = 93AE82F62917B2DE0009910E /* moment-widget.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +155,9 @@
 				Base,
 			);
 			mainGroup = 93AE82ED2917B2DE0009910E;
+			packageReferences = (
+				93AE83102917C48A0009910E /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 93AE82F72917B2DE0009910E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93AE82FE2917B2DE0009910E /* ViewController.swift in Sources */,
+				93AE83162917D0920009910E /* PhotoService.swift in Sources */,
+				93AE82FE2917B2DE0009910E /* MainVC.swift in Sources */,
 				93AE82FA2917B2DE0009910E /* AppDelegate.swift in Sources */,
 				93AE82FC2917B2DE0009910E /* SceneDelegate.swift in Sources */,
+				93AE831A2917DEBB0009910E /* AlbumData.swift in Sources */,
+				93AE831C2917E0A00009910E /* DetailVC.swift in Sources */,
+				93AE83142917CFF70009910E /* Constants.swift in Sources */,
+				93AE83182917D1100009910E /* AlbumCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,16 +337,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5S4XBZ2ACZ;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5S4XBZ2ACZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "moment-widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "찰나의 순간 - 사진메모 & 위젯";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,6 +359,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.lcs.app.moment-widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "ForDevelopment-Moment2";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,16 +372,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5S4XBZ2ACZ;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5S4XBZ2ACZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "moment-widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "찰나의 순간 - 사진메모 & 위젯";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,6 +394,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.lcs.app.moment-widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "ForDevelopment-Moment2";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -358,6 +424,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		93AE83102917C48A0009910E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		93AE83112917C48A0009910E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93AE83102917C48A0009910E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 93AE82EE2917B2DE0009910E /* Project object */;
 }
